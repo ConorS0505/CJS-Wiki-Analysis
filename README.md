@@ -37,34 +37,25 @@ You can copy the repo using:
 ``` git clone https://github.com/HomelessSkittle/CJS-Wiki-Analysis.git ```
 
 I ran my queries on a Hadoop "cluster" that ran only on my local machine, so your process for spinning up Hadoop + YARN daemons might look slightly different than this:
+
 FROM YOUR MAIN HADOOP DIRECTORY:
 ```
 sbin/start-dfs.sh
 sbin/start-yarn.sh
 ```
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
+Once the "cluster" is started, you can initalize a hive server:
+```
+hiveserver2
+```
+With the hiveserver running, you can connect to it with DBeaver and begin running queries.
+(Again, my project was run totally on a locally hosted cluster, so my database was at localhost:10000)
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+Using the project is simply editing and running, or simply just running the queries as they appear in the HQL files in your DBeaver.
+The create for relevant tables is listed at the top of each .hql file, and a creation of the database is listed in Q1.hql. It is assumed you are using the same database for all queries.
 
-## Contributors
-
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
 
 ## License
 
 This project uses the following license: [<license_name>](<link>).
-
-
-# CJS-Wiki-Analysis
-Revature project to analyze a series of questions using either HiveQL or MapReduce algorithms on Wikipedia data.
-
-Part of Revature's 2020 USF Big Data/Spark training batch
-
-The strucutre/setup of each table is listed at the beginning of each file, and the creation of the database is listed at the top of Q1. It is assumed you already have a database, or are using the same one for each script.
