@@ -58,4 +58,4 @@ The create for relevant tables is listed at the top of each .hql file, and a cre
 
 ## License
 
-This project uses the following license: [<MIT License>](<https://mit-license.org/>).
+This project uses the following license: [MIT License](<https://mit-license.org/>).
