@@ -34,7 +34,7 @@ To-do list:
 ## Getting Started
    
 You can copy the repo using:
-``` git clone https://github.com/HomelessSkittle/CJS-Wiki-Analysis.git ```
+``` git clone https://github.com/ConorS0505/CJS-Wiki-Analysis.git ```
 
 I ran my queries on a Hadoop "cluster" that ran only on my local machine, so your process for spinning up Hadoop + YARN daemons might look slightly different than this:
 
